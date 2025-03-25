@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 215220e35a5c84ce9b0d834d195617e3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 1355218169, guid: 6f9c394430e33933bbac989b158f2ac4, type: 3}
+  _scriptType: 1
+  _defaultReferences:
+  - Name: duckPrefab
+    Value: {fileID: 1981505179748798255, guid: 2af3a3da3a9b84f61be92b9c1bf8bae6, type: 3}
+  _lastErrorLine: 0

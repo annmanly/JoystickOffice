@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="UnityEngine.UIElements"
+    xmlns:hr="Highrise.UI"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+  <hr:UILuaView class="rocket-h-u-d">
+    <VisualElement class="rocket-hud-container">
+        <hr:UIBlur class="overlay" />
+        <hr:UIImage class="rocket-icon" name="_RocketIcon" />
+        <hr:UILabel class="rocket-text" name="_RocketLabel" />
+    </VisualElement>
+  </hr:UILuaView>
+
+</UXML>

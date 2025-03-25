@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UXML
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="UnityEngine.UIElements"
+        xmlns:hr="Highrise.UI"
+        xmlns:editor="UnityEditor.UIElements"
+        xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+
+    <hr:UIRewardAnimation class="reward-animation">
+        <hr:UIImage name="_rewardAnimation" class="overlay"/>
+        <hr:UIButton name="_openAllButton" class="button-floating overlay-top-right-safe">
+            <hr:UILabel key="open_all"/>
+        </hr:UIButton>
+        <VisualElement class="overlay-bottom-safe">
+            <hr:UIButton name="_selectGiftButton" class="button-primary">
+                <hr:UILabel key="select_gift"/>
+            </hr:UIButton>
+
+            <VisualElement name="_giftExchangingContainer">
+                <hr:UILabel name="_giftExchangingLabel" key="gifted_items_cannot_be_exchanged_later"/>
+                <hr:UIButton name="_giftExchangingButton" class="button-tertiary-banana-25">
+                    <hr:UILabel key="gift_exchanging"/>
+                </hr:UIButton>
+                <hr:UIButton name="_gotItButton" class="button-primary">
+                    <hr:UILabel key="got_it"/>
+                </hr:UIButton>
+            </VisualElement>
+        </VisualElement>
+    </hr:UIRewardAnimation>
+
+</UXML>
