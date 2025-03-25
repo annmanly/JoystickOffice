@@ -27,6 +27,8 @@ namespace Highrise.Lua.Generated
 
         [SerializeField] public Highrise.AudioShader m_BossSound = default;
         [SerializeField] public System.Double m_Amount = 0;
+        [LuaScriptPropertyAttribute("c46d9a19902b84094b4bdd7d3688878a")]
+        [SerializeField] public UnityEngine.Object m_collectibleIndicator = default;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -37,6 +39,7 @@ namespace Highrise.Lua.Generated
             {
                 CreateSerializedProperty(_script.GetPropertyAt(0), m_BossSound),
                 CreateSerializedProperty(_script.GetPropertyAt(1), m_Amount),
+                CreateSerializedProperty(_script.GetPropertyAt(2), m_collectibleIndicator),
             };
         }
     }
