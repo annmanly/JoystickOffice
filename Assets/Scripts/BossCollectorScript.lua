@@ -2,17 +2,17 @@
 
 --!SerializeField
 local BossSound : AudioShader = nil -- AudioShader for the sound effect
-
 --!SerializeField
 local Amount : number = 0 -- Number of item to add; ensure it's initialized
+--!SerializeField
+local collectibleIndicator : CollectibleIndicator = nil
 
 local itemTracker = require("ItemTracker") -- Manage the player's item inventory
-local indicatorSpawner = require("IndicatorSpawner")
 
 local currentItemChoice = nil
 
 GetItemChoice = function()
-  currentItemChoice = indicatorSpawner.GetCurrentItemChoice()
+  currentItemChoice = collectibleIndicator.GetCurrentItemChoice()
   print("current item choice " .. currentItemChoice)
 end
 

@@ -18,15 +18,16 @@ using Highrise.Lua;
 
 namespace Highrise.Lua.Generated
 {
-    [AddComponentMenu("Lua/IndicatorSpawner")]
+    [AddComponentMenu("Lua/CollectibleIndicator")]
     [LuaRegisterType(0xd625c0eb4260ff6e, typeof(LuaBehaviour))]
-    public class IndicatorSpawner : LuaBehaviourThunk
+    public class CollectibleIndicator : LuaBehaviourThunk
     {
         private const string s_scriptGUID = "c46d9a19902b84094b4bdd7d3688878a";
         public override string ScriptGUID => s_scriptGUID;
 
-        [SerializeField] public UnityEngine.GameObject m_duckPrefab = default;
-        [SerializeField] public UnityEngine.GameObject m_rocketPrefab = default;
+        [SerializeField] public System.Double m_collectibleCount = 2;
+        [SerializeField] public System.Collections.Generic.List<UnityEngine.GameObject> m_collectibleMeshes = default;
+        [SerializeField] public System.Double m_intervalLength = 10;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -35,8 +36,9 @@ namespace Highrise.Lua.Generated
 
             return new SerializedPropertyValue[]
             {
-                CreateSerializedProperty(_script.GetPropertyAt(0), m_duckPrefab),
-                CreateSerializedProperty(_script.GetPropertyAt(1), m_rocketPrefab),
+                CreateSerializedProperty(_script.GetPropertyAt(0), m_collectibleCount),
+                CreateSerializedProperty(_script.GetPropertyAt(1), m_collectibleMeshes),
+                CreateSerializedProperty(_script.GetPropertyAt(2), m_intervalLength),
             };
         }
     }
